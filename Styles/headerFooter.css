@@ -1,0 +1,126 @@
+/*Header*/
+
+#header {
+    /*Fixed height for header*/
+    height: 7em;
+}
+
+
+/*Styling for Navigation bar*/
+
+.nav {
+    /*Background colour for the nav bar*/
+    background-color: black;
+    /*Space between contents inside the box and border*/
+    padding-right: 14px;
+    padding-top: 20px;
+    /*Text alignment properties*/
+    text-align: right;
+    margin: 0px;
+    /*Nav bar takes full height of header*/
+    height: 100%;
+}
+
+
+/*Links in nav bar*/
+
+.nav a {
+    /*Display a single element*/
+    display: inline-block;
+    text-decoration: none;
+    /*Text colour*/
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Arial;
+    /*Space between each link*/
+    padding: 20px;
+    margin-top: 0px;
+    margin-right: 25px
+}
+
+
+/*Styles when hover links*/
+
+.nav a:hover {
+    color: #b3003b;
+    /*Solid red line under hovered link*/
+    border-bottom: 4px solid #b3003b;
+    padding-bottom: 15px;
+}
+
+
+/*Body takes full width and no space between elements(header and footer)*/
+
+body {
+    margin: 0px;
+}
+
+
+/*Game website logo*/
+
+.logo img {
+    /*Push image to the left*/
+    float: left;
+    height: 90px;
+    margin-top: -11px;
+    margin-left: 50px;
+}
+
+
+/*Main footer properties*/
+
+#footer {
+    /*Set footer to absolute and sticks it to the bottom*/
+    bottom: 0;
+    height: 10em;
+    color: #e4e1e1;
+    background-color: black;
+    font-family: Arial;
+}
+
+
+/*Sub footer properties*/
+
+#footer img {
+    /*Align icons and text on the same line*/
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    /*Fading properties*/
+    opacity: 0.90;
+}
+
+#footer-contact-left {
+    width: 31.5%;
+    height: 100%;
+    float: right;
+    padding-top: 10px;
+}
+
+#footer-contact-right {
+    width: 25%;
+    height: 100%;
+    float: right;
+    padding-top: 10px;
+}
+
+#footer-contact-right img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.90;
+}
+
+#footer-owner-info {
+    padding-top: 10px;
+    font-family: Arial;
+    margin-left: 10vh;
+    padding-bottom: 3px;
+}
+
+
+/*Styling for notes*/
+
+#notes {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}

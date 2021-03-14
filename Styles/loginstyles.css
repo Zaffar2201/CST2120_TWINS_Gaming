@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    overflow: visible;
+}
+
+
+/*login-main div styling*/
+
+#login-main {
+    height: 90vh;
+    /*Background image*/
+    background-image: url('../Images/galaxy.jpg');
+    background-size: cover;
+    margin: 0px;
+    border: 2px solid black;
+}
+
+
+/*Form properties*/
+
+#lgform {
+    width: 25%;
+    background-color: #051019;
+    /*Align text center*/
+    text-align: center;
+    opacity: 0.81;
+    border-radius: 25px;
+    margin-top: 150px;
+    margin-left: 39.5%;
+    color: white;
+}
+
+
+/*Heading in lgform*/
+
+#lgform h4 {
+    padding-top: 15px;
+    font-family: Arial;
+    color: white;
+}
+
+
+/*Placeholder effects*/
+
+::placeholder {
+    color: black;
+}
+#loginError{
+	margin-top:-7px;
+	color:#051019;
+}
+
+
+/* Styling for any input in the lgform*/
+
+#lgform input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#lgform button {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    opacity: 1 !important;
+}
+
+#lgform a {
+    color: white;
+}

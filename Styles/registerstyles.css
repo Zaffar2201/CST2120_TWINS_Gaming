@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    overflow: visible;
+}
+
+
+/*register-main div styling*/
+
+#register-main {
+    height: 97vh;
+    /*Background image*/
+    background-image: url('../Images/galaxy.jpg');
+    background-color: white;
+    /*Prevents background image from repeating*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    /*Black border around div register-main*/
+    border: 2px solid black;
+    color: white;
+}
+
+
+/*Form properties*/
+
+#rgform {
+    /*Width size in %*/
+    width: 40%;
+    background-color: #051019;
+    /*Align center*/
+    text-align: center;
+    opacity: 0.81;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 30%;
+}
+
+
+/*Styling for any h4 in rgform*/
+
+#rgform h4 {
+    padding-top: 15px;
+    font-family: Arial;
+    color: white;
+}
+
+
+/*Input poperties*/
+
+.normal-input {
+    width: 250px;
+    /*Space within placeholder or text*/
+    padding: 10px;
+    /*Rounded corner input*/
+    border-radius: 5px;
+}
+
+.phone-input {
+    width: 163px;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*Select dropbox properties*/
+
+#rgform select {
+    padding: 10px;
+    float: left;
+    /*Distance in px from the LHS*/
+    margin-left: 180px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+}
+
+
+/*Button styling*/
+
+#rgform button {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    /*!important make sure desired styling is rea*/
+    opacity: 1 !important;
+}
+
+::placeholder {
+    color: black;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+#rgform a {
+    color: white;
+}
+.inputError{
+	color:#051019;
+	margin-top:-18px;
+	margin-bottom:2px;
+}
+#phoneError{
+	margin-top:-13px;
+	margin-left:70px;
+	color:#051019;
+}
+
+
+
+

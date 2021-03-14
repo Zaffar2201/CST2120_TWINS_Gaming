@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--Start of html page-->
+<html>
+
+<!-- Head section-->
+<head>
+	<!--Title of website-->
+    <title>Scores</title>
+	
+	<!--External styling sheets-->
+    <link href="../Styles/scorestyles.css" type="text/css" rel="stylesheet">
+    <link href="../Styles/headerFooter.css" type="text/css" rel="stylesheet">
+	
+	<!--Link external javascript code -->
+	 <script src="../JS/score.js"></script>
+
+</head>
+
+<!--Body section-->
+<body onload="populateTable()">
+
+    <!--Header element-->
+    <header id="header">
+
+        <!--Navigation bar-->
+        <div class="nav">
+
+            <!--Display game main logo -->
+            <div class="logo">
+                <img src="../Images/game-logo.png" alt="logo design">
+
+            </div>
+
+            <!--Navigation bar links-->
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="score.html">Score</a>
+
+        </div>
+
+    </header>
+
+
+    <!--Main element of score page starts here-->
+    <div id="score-main">
+
+        <!--Div element where table will reside-->
+        <div id="scorebg">
+            <table id="scoreTable">
+			<tr>
+                    <!--Table header-->
+                    <th>Rank</th>
+                    <th> Username</th>
+                    <th>Scores</th>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!--Footer of the webpage-->
+    <footer id="footer">
+
+        <!--Short notes about the company and social media-->
+        <div id="footer-contact-right">
+            <span style="font-size:17px; font-weight:bold;margin-bottom:20px ">About the company</span>
+            <p id="notes ">Mejor juego de la historia<br>Siéntete libre de jugar
+            </p>
+
+            <!--&nbsp; for extra space-->
+            <img src="../Images/facebook.png" alt="facebook">&nbsp;&nbsp;
+            <img src="../Images/twitter.png" alt="twitter">&nbsp;&nbsp;
+            <img src="../Images/linkedin.png" alt="linkedin">&nbsp;&nbsp;
+            <img src="../Images/instagram.png" alt="instagram">&nbsp;&nbsp;
+
+        </div>
+
+        <!--Contact info-->
+        <div id="footer-contact-left">
+            <img src="../Images/placeholder.png" alt="location">&nbsp;&nbsp;Port Louis, Mauritius<br><br>
+            <img src="../Images/phone.png" alt="phone">&nbsp;&nbsp;+230 5 949 5577<br><br>
+            <img src="../Images/mail.png" alt="email">&nbsp;&nbsp;<span style="color:#4d8af3">mf828@live.mdx.ac.uk</span>
+
+        </div>
+
+        <!--Owner info-->
+        <div id="footer-owner-info">
+            Fakeermahamood Mohammad Zaffar Ally
+            <br><br> M00685151
+            <br><br> Middlesex University Mauritius
+        </div>
+
+
+    </footer>
+
+
+
+
+</body>
+
+
+
+
+</html>

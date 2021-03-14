@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    overflow: visible;
+    scroll-behavior: smooth;
+}
+
+#score-main {
+    /*Heigh of div element*/
+    height: 96vh;
+    background-image: url('../Images/scorebg.png');
+    background-size: cover;
+    margin: 0px;
+    border: 2px solid black;
+}
+
+#scorebg {
+    width: 1250px;
+    height: 700px;
+    /*Distance in px*/
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+
+/*Styling for table*/
+
+table {
+    background-color: transparent;
+    margin-left: 231px;
+    width: 800px;
+    height: 450px;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin-top: 170px;
+}
+
+
+/*Table data properties*/
+
+td {
+    padding: 10px;
+    color: white;
+    text-align: center;
+	font-size:20px;
+	font-weight:none;
+	 border-top: 1.5px solid goldenrod;
+}
+
+
+/*Table header properties*/
+
+th {
+    padding: 10px;
+    color: gold;
+    text-align: center;
+	font-size:25px;
+}
+
+
+
+
+
+
+/*Upon hvering table row*/
+
+tr:hover {
+    font-weight: bold;
+
+}

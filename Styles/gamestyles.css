@@ -1,0 +1,216 @@
+* {
+    /*Height and width apply to all parts of the element: content, padding and borders*/
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    /*Display scroll-bar*/
+    overflow: visible;
+}
+
+
+/*Header*/
+
+#header {
+    /*Fixed height for header*/
+    height: 5.5em;
+}
+
+
+/*Styling for Navigation bar*/
+
+.nav {
+    /*Background colour for the nav bar*/
+    background-color: black;
+    /*Space between contents inside the box and border*/
+    padding-right: 14px;
+    padding-top: 20px;
+    /*Text alignment properties*/
+    text-align: right;
+    margin: 0px;
+    /*Nav bar takes full height of header*/
+    height: 100%;
+}
+
+
+/*Links in nav bar*/
+
+.nav a {
+    /*Display a single element*/
+    display: inline-block;
+    text-decoration: none;
+    /*Text colour*/
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Arial;
+    margin-top: 5px;
+    margin-right: 25px
+}
+
+
+/*Styles when hover links*/
+
+.nav a:hover {
+    color: #b3003b;
+    /*Solid red line under hovered link*/
+    border-bottom: 4px solid #b3003b;
+    padding-bottom: 15px;
+}
+
+
+/*Body takes full width and no space between elements(header and footer)*/
+
+body {
+    margin: 0px;
+    background-image: url('../Images/gamebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*Game website logo*/
+
+.logo img {
+    float: left;
+    height: 70px;
+    margin-top: -11px;
+    margin-left: 50px;
+}
+/*Container to display level of game: Easy-Normal-Hard*/
+#level-container {
+    color: white;
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.game-info {
+	/*Make sure container is on the same line and take full length of grid (-1 is last column i.e col num 4)*/
+    grid-column: 1/-1;
+	/*Applies to text, automatically calculate space between*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-play {
+	/*Create a grid layout*/
+    display: grid;
+	/*Gap between grid(cards in our case)*/
+    grid-gap: 12.5px;
+	/*4 columns in the grid, sizes automatically*/
+    grid-template-columns: repeat(4, auto);
+    margin: 60px;
+	/*Make sure all cards are inside grid*/
+    justify-content: center;
+	/*3d animation, tells game user is 500px away from screen*/
+    perspective: 500px;
+}
+
+.game-time,
+.game-score {
+    color: white;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gameCard {
+    height: 180px;
+    width: 130px;
+	/*Make sure cardProp is inside card*/
+    position: relative;
+}
+
+.cardProp {
+	/*Sets width and height*/
+    width: 100%;
+    height: 100%;
+	/*Overlap back and front of card, since they will be displayed on same interface*/
+    position: absolute;
+	/*Position image more accurately*/
+    display: flex;
+	/*Smooth curve around each borders*/
+    border-radius: 25%;
+	/*Make backface visibility:hidden*/
+    backface-visibility: hidden;
+	/*Smooth loking animation*/
+    transition: transform 200ms ease-in-out;
+}
+
+.front-card img,
+.back-card img {
+    width: 100%;
+    height: 100%;
+}
+/*By default, front card image is on top
+  Rotate card, inorder to make sure back card image appears on top
+  Works with backface visibility*/
+.front-card {
+    transform: rotateY(180deg);
+}
+/*Rotate back card when call flip-effects class*/
+.gameCard.flip-effects .back-card {
+    transform: rotateY(-180deg);
+}
+/*Rotate font card when call flip-effects class*/
+.gameCard.flip-effects .front-card {
+    transform: rotateY(0);
+}
+
+.text-start,
+.text-victory,
+.text-gameOver {
+	/*Make display hidden*/
+    display: none;
+	/*Fixed position*/
+    position: fixed;
+	/*Location*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+	/*Appears on top using z-axis*/
+    z-index: 100;
+	color:#1560bd;
+}
+.difficulty-level,
+.victory-points,
+.good-luck,
+{
+	font-size:60px;
+	
+}
+.replay{
+	font-size:35px;
+}
+
+
+/*Make sure radio buttons are in middlde and increase size*/
+input[type=radio]{
+	vertical-align:middle;
+	height:2.5em;
+	
+}
+/*Grows text when calls show(n) class*/
+.text-start.show,
+.text-victory.show1,
+.text-gameOver.show2 {
+    display: flex;
+	flex-direction:column;
+	/*Animation*/
+    animation: text-growth 700ms forwards;
+}
+
+/*Desired animation*/
+@keyframes text-growth {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0px;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.9);
+        font-size: 120px;
+    }
+}

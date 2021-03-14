@@ -1,0 +1,151 @@
+* {
+    /*Height and width apply to all parts of the element: content, padding and borders*/
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    /*Display scroll-bar*/
+    overflow: visible;
+}
+
+#main {
+    /*Specifying height*/
+    height: 55vh;
+    /*Set main div background picture and properties*/
+    background-image: url('../Images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Form with id button-form properties*/
+
+#button-form {
+    width: 50%;
+    height: 55vh;
+    text-align: center;
+}
+
+
+/*Styling for button where div id = main*/
+
+#main button {
+    /*text-color*/
+    color: #b3003b !important;
+    /*Display in Ucase formw*/
+    text-transform: uppercase;
+    text-decoration: none;
+    /*Button bg color*/
+    background: whitesmoke;
+    /*Distance in px from the text*/
+    padding: 15px;
+    /*Rounded button*/
+    border-radius: 25px;
+    display: inline-block;
+    /*Inline block display*/
+    width: 125px;
+    border: none;
+    font-size: 20px;
+    /*Effects*/
+    transition: all 0.4s ease 0s;
+    margin-top: 25vh;
+    margin-left: 92%;
+    font-weight: bold;
+}
+
+
+/*Effects upon hovering a main button*/
+
+#main button:hover {
+    /*Shadow of the button*/
+    -moz-box-shadow: 0px 5px 35px -9px rgba(0, 0, 0, 0.565);
+    -webkit-box-shadow: 0px 5px 35px -9px rgba(0, 0, 0, 0.565);
+    /*Shadow of the button text*/
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+
+
+/*Specify image properties for below containers*/
+
+#game-container-pic img,
+#play-container-pic img,
+#tips-container-pic img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+
+
+/*FLoat containers to the left*/
+
+#game-container-pic,
+#tips-container-pic {
+    float: left;
+    margin-bottom: 5vh;
+    margin-left: 15vh;
+}
+
+#play-container-pic {
+    float: right;
+    margin-bottom: 5vh;
+    margin-right: 15vh;
+}
+
+
+/*Styling for containers title*/
+
+.game-container-title,
+.play-container-title,
+.tips-container-title {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-weight: bold;
+}
+
+
+/*Styling for palabre*/
+
+.game-container-palabre,
+.tips-container-palabre {
+    margin-left: 50vh;
+    margin-top: 13vh;
+    text-align: justify;
+    width: 1000px;
+}
+
+.play-container-palabre {
+    float: right;
+    margin-right: 15vh;
+    margin-top: 5vh;
+    text-align: justify;
+    width: 1000px;
+}
+
+
+/*Height of containers*/
+
+.game-container,
+.play-container,
+.tips-container {
+    height: 310px;
+    margin-bottom: 0px;
+}
+
+
+/*Line after the container title*/
+
+.game-container-title:after,
+.play-container-title:after,
+.tips-container-title:after {
+    width: 100px;
+    height: 3px;
+    background-color: #b3003b;
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 30px;
+}

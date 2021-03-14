@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--Start of html page-->
+<html>
+
+
+<!-- Head section-->
+
+<head>
+    <!--Display title of website on title bar-->
+    <title>Login</title>
+
+    <!--Link external styling sheets-->
+    <link href="../Styles/loginstyles.css" type="text/css" rel="stylesheet">
+    <link href="../Styles/headerFooter.css" type="text/css" rel="stylesheet">
+
+	<!--Link external javascript code -->
+    <script type="text/javascript" src="../JS/login.js"></script>
+
+</head>
+
+<!--Body section-->
+
+<body>
+
+    <!--Header element with unique id 'header'-->
+    <header id="header">
+
+
+        <!--Div element to wrap navigation bar into header-->
+        <div class="nav">
+
+            <!--Display game main logo and specifying it's source as class 'logo' for styling-->
+            <div class="logo">
+                <img src="../Images/game-logo.png" alt="logo design">
+
+            </div>
+
+            <!--Navigation bar links-->
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="score.html">Score</a>
+        </div>
+    </header>
+
+
+    <!--Main section of login page-->
+    <div id="login-main">
+
+        <!--Form starts here and redirects to game.php-->
+        <form id="lgform" onsubmit="return loginProcess()" action="game.html">
+
+            <!--Heading-->
+            <h4>Log in</h4>
+
+            <!--Input text box-->
+            <!--Prevents autocomplete from previous input and insert placeholder for each input-->
+            <input type="text" id="lguname" name="lguname" placeholder="Username" autocomplete="off" required><br><br>
+            <input type="password" id="lgpword" name="lgpword" placeholder="Password" required><br><br>
+			<div id="loginError">Error Message</div><br>
+
+
+            <!--Button to submit-->
+            <button type="submit" name="sign-in">Sign in</button><br><br><br>
+
+
+            <!--Link to register in case of new user-->
+            Need to register? | <a href="register.html ">Here</a><br><br>
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!--Footer of the webpage-->
+    <footer id="footer">
+
+        <!--Short notes about the company and social media-->
+        <div id="footer-contact-right">
+            <span style="font-size:17px; font-weight:bold;margin-bottom:20px">About the company</span>
+            <p id="notes">Mejor juego de la historia<br>Siéntete libre de jugar
+            </p>
+
+            <!--&nbsp; for extra space-->
+            <img src="../Images/facebook.png" alt="facebook">&nbsp;&nbsp;
+            <img src="../Images/twitter.png" alt="twitter">&nbsp;&nbsp;
+            <img src="../Images/linkedin.png" alt="linkedin">&nbsp;&nbsp;
+            <img src="../Images/instagram.png" alt="instagram">&nbsp;&nbsp;
+
+        </div>
+
+        <!--Contact info-->
+        <div id="footer-contact-left">
+            <img src="../Images/placeholder.png" alt="location">&nbsp;&nbsp;Port Louis, Mauritius<br><br>
+            <img src="../Images/phone.png" alt="phone">&nbsp;&nbsp;+230 5 949 5577<br><br>
+            <img src="../Images/mail.png" alt="email">&nbsp;&nbsp;<span style="color:#4d8af3">mf828@live.mdx.ac.uk</span>
+
+
+        </div>
+
+        <!--Owner info-->
+        <div id="footer-owner-info">
+            Fakeermahamood Mohammad Zaffar Ally
+            <br><br> M00685151
+            <br><br> Middlesex University Mauritius
+        </div>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>
